@@ -15,16 +15,16 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hemraj-psi.vercel.app/"),
   title: {
-    default: "Hemraj | Full Stack Developer",
-    template: "%s | Hemraj",
+    default: "Hemraj Shah | Full Stack Developer",
+    template: "%s | Hemraj Shah",
   },
 
   description:
-    "Hemraj is a Full Stack Developer specializing in modern web applications using Next.js, React, PostgreSQL, and the MERN stack.",
+    "Hemraj Shah is a Full Stack Developer specializing in modern web applications using Next.js, React, PostgreSQL, and the MERN stack.",
 
   keywords: [
-    "Hemraj",
-    "Hemraj",
+    "Hemraj Shah",
+    "Hemraj Shah",
     "Full Stack Developer",
     "Web Developer",
     "Next.js Developer",
@@ -32,38 +32,41 @@ export const metadata: Metadata = {
     "MERN Stack Developer",
     "PostgreSQL",
     "JavaScript Developer",
+    "aquma",
+    "aquma106",
+    "hemraj shah",
   ],
 
   authors: [
     {
-      name: "Hemraj",
+      name: "Hemraj Shah",
     },
   ],
 
-  creator: "Hemraj",
+  creator: "Hemraj Shah",
 
   openGraph: {
-    title: "Hemraj | Full Stack Developer",
+    title: "Hemraj Shah | Full Stack Developer",
     description:
-      "Portfolio of Hemraj, a Full Stack Developer building modern and scalable web applications.",
+      "Portfolio of Hemraj Shah, a Full Stack Developer building modern and scalable web applications.",
     type: "website",
     locale: "en_IN",
-    siteName: "Hemraj",
+    siteName: "Hemraj Shah",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Hemraj - Full Stack Developer",
+        alt: "Hemraj Shah - Full Stack Developer",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Hemraj | Full Stack Developer",
+    title: "Hemraj Shah | Full Stack Developer",
     description:
-      "Portfolio of Hemraj, a Full Stack Developer building modern and scalable web applications.",
+      "Portfolio of Hemraj Shah, a Full Stack Developer building modern and scalable web applications.",
   },
 
   robots: {

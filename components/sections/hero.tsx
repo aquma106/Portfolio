@@ -8,7 +8,7 @@ import hemraj from "../../public/hemraj.png";
 
 const Hero = () => {
   return (
-    <section className="mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl flex-col-reverse items-center justify-center gap-12 px-6 py-16 md:flex-row md:justify-between mb-4">
+    <section className="mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl flex-col-reverse items-center justify-center gap-12 px-6 py-16 md:flex-row md:justify-between mb-4 mt-2">
       {/* Hero Content */}
       <div className="max-w-2xl flex-1">
         <Badge className="px-4 py-1.5 text-sm">Full Stack Developer</Badge>
