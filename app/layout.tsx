@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hemraj.vercel.app"),
+  metadataBase: new URL("https://hemraj-psi.vercel.app/"),
   title: {
     default: "Hemraj | Full Stack Developer",
     template: "%s | Hemraj",
