@@ -13,7 +13,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hemraj-psi.vercel.app/"),
+  metadataBase: new URL("https://hemraj-psi.vercel.app"),
+
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Hemraj Shah | Full Stack Developer",
     template: "%s | Hemraj Shah",
@@ -24,19 +28,16 @@ export const metadata: Metadata = {
 
   keywords: [
     "Hemraj Shah",
-    "Hemraj Shah",
     "Full Stack Developer",
     "Web Developer",
     "Next.js Developer",
     "React Developer",
     "MERN Stack Developer",
-    "PostgreSQL",
+    "PostgreSQL Developer",
     "JavaScript Developer",
-    "aquma",
-    "aquma106",
-    "hemraj shah",
+    "TypeScript Developer",
+    "Software Developer",
   ],
-
   authors: [
     {
       name: "Hemraj Shah",
@@ -75,13 +76,47 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Hemraj Shah",
+  url: "https://hemraj-psi.vercel.app",
+  jobTitle: "Full Stack Developer",
+  description:
+    "Hemraj Shah is a Full Stack Developer specializing in modern web applications using Next.js, React, PostgreSQL, and the MERN stack.",
+  knowsAbout: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "MongoDB",
+    "PostgreSQL",
+    "Prisma",
+    "MERN Stack",
+    "Web Development",
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <body className="flex min-h-full flex-col">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(jsonLd),
+            }}
+          />
+
+          {children}
+        </body>
+        {children}
+      </body>
     </html>
   );
 }
