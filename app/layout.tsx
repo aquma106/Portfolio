@@ -115,7 +115,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
           {children}
         </body>
-        {children}
       </body>
     </html>
   );
